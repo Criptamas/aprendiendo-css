@@ -1,0 +1,48 @@
+*{
+ box-sizing: border-box;
+ padding: 0;
+ margin: 0;
+ font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1{
+ color: blueviolet;
+}
+
+nav{
+ padding-top: 10px;
+}
+
+nav a{
+ text-decoration: none;
+ padding: 5px;
+ border-radius: 5px;
+ color: aliceblue;
+ background-color: cadetblue;
+}
+
+nav li{
+ display: inline-block;
+}
+
+.nav-ul .nav-ul__exit{
+ color: rgb(201, 201, 211);
+ background-color: brown;
+}
+
+.nav-ul .nav-ul__exit::after{
+ content: ' and save ';
+}
+
+nav a:hover{
+ background-color: yellow;
+}
+
+nav a:active{
+ color: blue;
+ border-radius: 50px;
+}
+
+nav a:visited{
+ color: red;
+}
