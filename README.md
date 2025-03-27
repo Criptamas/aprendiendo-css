@@ -11,3 +11,8 @@ Un monto de cosas mas asi que vamo a darle xd....
 ## Modulo 2
 
 **Implementamos las medidas px rem em y min-width/heigth. Entendiendo que para min-wodth debemos partir de un tamano base mientras que para el heigth no, sino que le agregamos el min-heigth como medida para que todo el contenido quede dentro siempre. Ademas usamos vh y vw que son medidas relativas que lo que hace es hacer referencia al tamano de ancgo y largo de nuetra pantalla.**
+
+
+## Modulo 3
+
+**Centramos y manejamos todos los elementos con flexbox para reforzar lo conocimientos. Ademas de los display inline, block e inline-block**
