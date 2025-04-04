@@ -1,0 +1,155 @@
+*{
+ box-sizing: border-box;
+ margin: 0;
+ padding: 0;
+}
+
+html{
+ font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+ font-size: 62.5%;
+}
+
+.header{
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ padding: 18px;
+ width: 100%;
+ height: 100px;
+ background-color: aqua;
+ position: relative;
+}
+
+.title{
+ font-size: 2.4rem;
+}
+
+.nav .nav-container{
+ display: flex;
+ justify-content: center;
+}
+
+.nav li{
+ display: flex;
+ justify-content: center;
+ list-style: none;
+ margin-left: 10px;
+ padding: 5px;
+ width: 100px;
+ background-color: rgb(220, 208, 208);
+ border-radius: 15px;
+ border: 1.5px solid black;
+}
+
+.nav li .nav-container__link{
+ font-size: 1.4rem;
+ font-weight: 500;
+ text-decoration: none;
+ color: rgb(16, 20, 145);
+}
+
+
+main{
+ width: 100%;
+ background-color: azure;
+ border: 2px solid black;
+}
+
+.container{
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+}
+
+.h2-title{
+ font-size: 3.4rem;
+ margin: 10px;
+}
+
+.container-article{
+ padding: 30px;
+}
+
+.container-article p{
+ font-size: 1.5rem;
+ font-weight: 400;
+ text-align: justify;
+ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.container-article__figure{
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+}
+
+.container-article__figure .article-img{
+ margin: 5px;
+ width: 400px;
+ height: 250px;
+ border: 4px solid black;
+ border-radius: 20px;
+ transition: .4s;
+}
+
+.article-img:hover{
+ position: relative;
+ top: -8px;
+ box-shadow: 10px 10px rgb(58, 57, 57);
+}
+
+
+
+
+
+
+
+/* *{
+ box-sizing: border-box;
+ margin: 0;
+ padding: 0;
+}
+
+html{
+ font-size: 62.5%;
+}
+
+.container{
+ display: flex;
+ flex-wrap: wrap-reverse;
+ border: 2px solid black;
+ border-radius: 5px;
+}
+
+.container div{
+ width: 100px;
+ height: 70px;
+}
+
+.container-child__1{
+ background-color: brown;
+}
+
+
+.container-child__2{
+ background-color: pink;
+}
+
+
+.container-child__3{
+ background-color: red;
+}
+
+.container-child__4{
+ background-color: blue;
+}
+
+.container-child__5{
+ background-color: orange;
+}
+
+/* .container-child__6{
+ background-color: purple;
+} */ 

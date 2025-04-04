@@ -15,4 +15,6 @@ Un monto de cosas mas asi que vamo a darle xd....
 
 ## Modulo 3
 
-**Centramos y manejamos todos los elementos con flexbox para reforzar lo conocimientos. Ademas de los display inline, block e inline-block**
+**Centramos y manejamos todos los elementos con flexbox para reforzar lo conocimientos. Ademas de los display inline, block e inline-block. De la misma forma, incluimos el concepto de z-index que nos sirve para superponer elementos como dialogos o modale, recordando que el numero que le asignemos al z-index es indiferente pero debemos mantener un orden logicos**
+
+> Contexto de apilamiento: debemos agregar un position: relative antex de usar z-index. Este va aplicado al elemento que queramos cambiarle el z-index.
