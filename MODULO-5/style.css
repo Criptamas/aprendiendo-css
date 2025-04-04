@@ -1,0 +1,51 @@
+*{
+ box-sizing: border-box;
+ margin: 0;
+ padding: 0;
+}
+
+html{
+ font-size: 62.5%;
+}
+
+.container{
+ display: flex;
+ flex-wrap: wrap;
+ border: 0.3rem solid black;
+ border-radius: 5px;
+
+}
+
+
+
+.container-child{
+ height: 10rem;
+ flex-basis: 10rem;
+ flex-grow: 1;
+}
+
+.container-child__1{
+ background-color: brown;
+}
+
+
+.container-child__2{
+ background-color: pink;
+}
+
+
+.container-child__3{
+ background-color: red;
+}
+
+.container-child__4{
+ background-color: blue;
+}
+
+.container-child__5{
+ background-color: orange;
+}
+
+/* .container-child__6{
+ background-color: purple;
+} 
