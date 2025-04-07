@@ -11,41 +11,32 @@ html{
 .container{
  display: flex;
  flex-wrap: wrap;
- border: 0.3rem solid black;
- border-radius: 5px;
 
 }
 
-
-
-.container-child{
- height: 10rem;
- flex-basis: 10rem;
- flex-grow: 1;
+.c1,
+.c2,
+.c3,
+.c4,
+.c5{
+ width: 100%;
+ height: 200px;
+ min-width: 150px;
 }
 
-.container-child__1{
- background-color: brown;
-}
-
-
-.container-child__2{
- background-color: pink;
-}
-
-
-.container-child__3{
- background-color: red;
-}
-
-.container-child__4{
+.c1{
  background-color: blue;
 }
-
-.container-child__5{
- background-color: orange;
+.c2{
+ background-color: rgb(125, 125, 255);
+}
+.c3{
+ background-color: rgb(183, 183, 252);
+}
+.c4{
+ background-color: rgb(218, 218, 238);
+}
+.c5{
+ background-color: rgb(25, 25, 56);
 }
 
-/* .container-child__6{
- background-color: purple;
-} 

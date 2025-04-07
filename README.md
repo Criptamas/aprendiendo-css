@@ -24,6 +24,8 @@ Un monto de cosas mas asi que vamo a darle xd....
 
 Todos nuestros proyectos deben de empezar con un design primeramente mobile y luego ir escalando a desktop. Esto quiere decir que mientras desarrollamos nuestro proyecto tenemos que ir disesandolo como si fuera una app de tlf primeramente y despues ir viendo como se veria en un ordenador.
 
+# TODOS LOS MEDIA QUERY DEBEN IR ABAJO 
+
 >La media query No es la mejor práctica 
 ---------- --------
 @media (min-width: 480px){
@@ -48,3 +50,28 @@ Y este el diseno para pantallas de tablets:
 
 Y este para pantallas mas grandes tipo ordenadores:
 `<link rel:'stylesheet' href:'./desktop.css' media:'screen and (min-width: 1024px)' />`
+
+## Patron mustly fluid:
+![alt text](image.png)
+
+
+# Imagenes responsive !!
+
+## Etiqueta picture
+
+Funciona igual que nuestra etiqueta de video, basicamente tiene tres sources que renderizan a tres imagenes dependiendo de la media query que le pasemos. La primera siempre debe ser la mas grande (800px - 1024px) y la segunda la mediana (600px - 800px), estas dos deben ir dentro de una etiqueta "source" cada una y con el atributo media, que es el que definira sus dimensiones a renderizar y srcset que es donde ira el link de las mismas. Por ultimo renderizamos la de por defecto que seria la img mas pequena teniendo en cuenta que trabajamos bajo la modalidad mobile first/
+
+`<picture>
+  <source media="(min-width:800px)"  srcset="./images/large.png">
+  <source media="(min-width:600px)"  srcset="./images/media.png">
+  <img src="./images/small.png" alt="Imagen responsive design de un gatito loco">
+ </picture>`
+
+ Con esto basicamente le decimos al navegador que renderice una img dependiendo de la screen q se este utilizando en el momento. Y asi nuestra pagina no tiene que estar cargando una img demasiado pesada cuando no sea necesaria. Recordar siempre que el orden es de mayor -> medio -> menor. 
+
+ -------------
+
+ **Nota: por temas de accesibilidad es mejor usar medidas REM para los txt TODOS H1 H2 H3 H4 H5 H6 P STRONG SPAN DIV A LI Todos los que sean txt deben de ser medidos en rem y no en pixeles ya que si el usuario quiee agrandar el tamano de font default en el navegador y nuestros txt estan medidos en px estos no se modificaran pero si estan en rem si lo haran pq son  medidas relativas**
+
+ -------------
+ 
