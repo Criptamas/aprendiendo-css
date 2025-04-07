@@ -61,11 +61,11 @@ Y este para pantallas mas grandes tipo ordenadores:
 
 Funciona igual que nuestra etiqueta de video, basicamente tiene tres sources que renderizan a tres imagenes dependiendo de la media query que le pasemos. La primera siempre debe ser la mas grande (800px - 1024px) y la segunda la mediana (600px - 800px), estas dos deben ir dentro de una etiqueta "source" cada una y con el atributo media, que es el que definira sus dimensiones a renderizar y srcset que es donde ira el link de las mismas. Por ultimo renderizamos la de por defecto que seria la img mas pequena teniendo en cuenta que trabajamos bajo la modalidad mobile first/
 
-`<picture>
-  <source media="(min-width:800px)"  srcset="./images/large.png">
-  <source media="(min-width:600px)"  srcset="./images/media.png">
-  <img src="./images/small.png" alt="Imagen responsive design de un gatito loco">
- </picture>`
+`<source media="(min-width:800px)"  srcset="./images/large.png">`
+
+  `<source media="(min-width:600px)"  srcset="./images/media.png">`
+  
+  `<img src="./images/small.png" alt="Imagen responsive design de un gatito loco">`
 
  Con esto basicamente le decimos al navegador que renderice una img dependiendo de la screen q se este utilizando en el momento. Y asi nuestra pagina no tiene que estar cargando una img demasiado pesada cuando no sea necesaria. Recordar siempre que el orden es de mayor -> medio -> menor. 
 
